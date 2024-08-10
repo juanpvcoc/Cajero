@@ -1,0 +1,46 @@
+-- Base de datos
+
+DROP SCHEMA IF EXISTS mibancojpva2614986;
+
+CREATE SCHEMA mibancojpva2614986;
+USE mibancojpva2614986;
+
+-- Crear la tabla Usuarios
+CREATE TABLE usuarios (
+	id_usuario INT NOT NULL AUTO_INCREMENT,
+    usuario VARCHAR(25) NOT NULL,
+    clave VARCHAR(128) NOT NULL,
+    correo VARCHAR(128) NOT NULL,
+    PRIMARY KEY(id_usuario)
+);
+
+-- Tabla Cuentas
+CREATE TABLE cuentas(
+	id_cuenta INT NOT NULL AUTO_INCREMENT,
+    nro_cuenta VARCHAR(12) NOT NULL,
+    fecha_c TIMESTAMP,
+    clave VARCHAR(6),
+    saldo DECIMAL,
+    PRIMARY KEY(id_cuenta)
+);
+
+-- Tabla Movimientos
+CREATE TABLE movimientos(
+	id_movimiento INT NOT NULL AUTO_INCREMENT,
+    movimiento ENUM('DEPOSITO', 'RETIRO', 'TRANSFERENCIA'),
+    fecha_mvto TIMESTAMP,
+    monto DECIMAL,
+    id_cuenta INT NOT NULL,
+    PRIMARY KEY(id_movimiento),
+    FOREIGN KEY(id_cuenta) REFERENCES cuentas(id_cuenta)
+);
+
+
+-- Inserción de datos
+INSERT INTO usuarios (usuario, clave, correo) VALUES
+	('juanpv', 'juan1234', 'juanpvcoc@gmail.com'),
+    ('juanvel', 'juan1234', 'juanvelcoc@gmail.com');
+    
+INSERT INTO cuentas(nro_cuenta, fecha_c, clave, saldo) VALUES
+	('1001', CURRENT_TIMESTAMP(), '1234', 1000000), 
+    ('1002', CURRENT_TIMESTAMP(), '5678', 500000);

@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>729</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>731</width>
+     <height>501</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>60</y>
+      <width>541</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="4" column="0">
+      <widget class="QPushButton" name="btnTransferir">
+       <property name="maximumSize">
+        <size>
+         <width>250</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Candara</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#btnTransferir{
+	background-color: qlineargradient(spread:pad, x1:0.015, y1:0.00568182, x2:0.626, y2:1, stop:0.144279 rgba(0, 0, 0, 176), stop:0.835821 rgba(0, 0, 0, 237));
+	
+	color: rgba(255, 255, 255, 210);
+	border-radius: 20px;
+}
+
+QPushButton#btnTransferir:hover{
+	background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(8, 220, 0, 255), stop:0.810945 rgba(136, 224, 136, 255));
+}
+
+QPushButton#btnTransferir:pressed{
+	padding-left: 5px;
+	padding-top: 5px;
+	background-color: rgba(105, 118, 132, 200);
+}</string>
+       </property>
+       <property name="text">
+        <string>Transferir</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="btnRetirar">
+       <property name="maximumSize">
+        <size>
+         <width>250</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Candara</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#btnRetirar{
+	background-color: qlineargradient(spread:pad, x1:0.015, y1:0.00568182, x2:0.626, y2:1, stop:0.144279 rgba(0, 0, 0, 176), stop:0.835821 rgba(0, 0, 0, 237));
+	
+	color: rgba(255, 255, 255, 210);
+	border-radius: 20px;
+}
+
+QPushButton#btnRetirar:hover{
+	background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(8, 220, 0, 255), stop:0.810945 rgba(136, 224, 136, 255));
+}
+
+QPushButton#btnRetirar:pressed{
+	padding-left: 5px;
+	padding-top: 5px;
+	background-color: rgba(105, 118, 132, 200);
+}</string>
+       </property>
+       <property name="text">
+        <string>Retirar</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="btnDepositar">
+       <property name="maximumSize">
+        <size>
+         <width>250</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Candara</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#btnDepositar{
+	background-color: qlineargradient(spread:pad, x1:0.015, y1:0.00568182, x2:0.626, y2:1, stop:0.144279 rgba(0, 0, 0, 176), stop:0.835821 rgba(0, 0, 0, 237));
+	
+	color: rgba(255, 255, 255, 210);
+	border-radius: 20px;
+}
+
+QPushButton#btnDepositar:hover{
+	background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(8, 220, 0, 255), stop:0.810945 rgba(136, 224, 136, 255));
+}
+
+QPushButton#btnDepositar:pressed{
+	padding-left: 5px;
+	padding-top: 5px;
+	background-color: rgba(105, 118, 132, 200);
+}</string>
+       </property>
+       <property name="text">
+        <string>Depositar</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" colspan="2">
+      <widget class="QLabel" name="lblUser">
+       <property name="maximumSize">
+        <size>
+         <width>500</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Candara</family>
+         <pointsize>24</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0" colspan="2">
+      <widget class="QLabel" name="lblUser_3">
+       <property name="maximumSize">
+        <size>
+         <width>500</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Candara</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(0, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string>Por favor seleccione una de las siguientes opciones</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="btnCambiarClave">
+       <property name="maximumSize">
+        <size>
+         <width>250</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Candara</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#btnCambiarClave{
+	background-color: qlineargradient(spread:pad, x1:0.015, y1:0.00568182, x2:0.626, y2:1, stop:0.144279 rgba(0, 0, 0, 176), stop:0.835821 rgba(0, 0, 0, 237));
+	
+	color: rgba(255, 255, 255, 210);
+	border-radius: 20px;
+}
+
+QPushButton#btnCambiarClave:hover{
+	background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(8, 220, 0, 255), stop:0.810945 rgba(136, 224, 136, 255));
+}
+
+QPushButton#btnCambiarClave:pressed{
+	padding-left: 5px;
+	padding-top: 5px;
+	background-color: rgba(105, 118, 132, 200);
+}</string>
+       </property>
+       <property name="text">
+        <string>Cambiar Clave</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QPushButton" name="btnSalir">
+       <property name="maximumSize">
+        <size>
+         <width>250</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Candara</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#btnSalir{
+	background-color: qlineargradient(spread:pad, x1:0.015, y1:0.00568182, x2:0.626, y2:1, stop:0.144279 rgba(0, 0, 0, 176), stop:0.835821 rgba(0, 0, 0, 237));
+	
+	color: rgba(255, 255, 255, 210);
+	border-radius: 20px;
+}
+
+QPushButton#btnSalir:hover{
+	background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(255, 37, 37, 255), stop:0.81592 rgba(197, 75, 75, 255));
+}
+
+QPushButton#btnSalir:pressed{
+	padding-left: 5px;
+	padding-top: 5px;
+	background-color: rgba(105, 118, 132, 200);
+}</string>
+       </property>
+       <property name="text">
+        <string>Salir</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QPushButton" name="btnConsultarSaldo">
+       <property name="maximumSize">
+        <size>
+         <width>250</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Candara</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#btnConsultarSaldo{
+	background-color: qlineargradient(spread:pad, x1:0.015, y1:0.00568182, x2:0.626, y2:1, stop:0.144279 rgba(0, 0, 0, 176), stop:0.835821 rgba(0, 0, 0, 237));
+	
+	color: rgba(255, 255, 255, 210);
+	border-radius: 20px;
+}
+
+QPushButton#btnConsultarSaldo:hover{
+	background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(8, 220, 0, 255), stop:0.810945 rgba(136, 224, 136, 255));
+}
+
+QPushButton#btnConsultarSaldo:pressed{
+	padding-left: 5px;
+	padding-top: 5px;
+	background-color: rgba(105, 118, 132, 200);
+}</string>
+       </property>
+       <property name="text">
+        <string>Consultar Saldo</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QPushButton" name="btnAdminUsers">
+       <property name="maximumSize">
+        <size>
+         <width>250</width>
+         <height>50</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Candara</family>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton#btnAdminUsers{
+	background-color: qlineargradient(spread:pad, x1:0.015, y1:0.00568182, x2:0.626, y2:1, stop:0.144279 rgba(0, 0, 0, 176), stop:0.835821 rgba(0, 0, 0, 237));
+	
+	color: rgba(255, 255, 255, 210);
+	border-radius: 20px;
+}
+
+QPushButton#btnAdminUsers:hover{
+	background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(8, 220, 0, 255), stop:0.810945 rgba(136, 224, 136, 255));
+}
+
+QPushButton#btnAdminUsers:pressed{
+	padding-left: 5px;
+	padding-top: 5px;
+	background-color: rgba(105, 118, 132, 200);
+}</string>
+       </property>
+       <property name="text">
+        <string>Administrar Usuarios</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>671</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(238, 238, 238, 105), stop:0.81592 rgba(255, 255, 255, 94));
+border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>741</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(6, 184, 0, 255), stop:0.810945 rgba(123, 203, 123, 255));</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>671</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(255, 255, 255, 142), stop:0.810945 rgba(255, 255, 255, 134));
+border-radius: 10px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblUser_2">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>120</y>
+      <width>500</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>500</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Candara</family>
+      <pointsize>24</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(0, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <zorder>label</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_2</zorder>
+   <zorder>layoutWidget</zorder>
+   <zorder>lblUser_2</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

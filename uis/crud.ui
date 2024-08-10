@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>739</width>
+    <height>518</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>40</y>
+     <width>661</width>
+     <height>441</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="topMargin">
+     <number>10</number>
+    </property>
+    <property name="rightMargin">
+     <number>10</number>
+    </property>
+    <property name="bottomMargin">
+     <number>10</number>
+    </property>
+    <property name="spacing">
+     <number>10</number>
+    </property>
+    <item row="5" column="0">
+     <widget class="QLineEdit" name="txtUser">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Candara</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(255, 255, 255, 142), stop:0.810945 rgba(255, 255, 255, 134));
+border-radius: 5px;
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>Usuario</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0" colspan="2">
+     <widget class="QLabel" name="lblTitle">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Candara</family>
+        <pointsize>24</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Administrar Usuarios</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QPushButton" name="btnInsertar">
+      <property name="maximumSize">
+       <size>
+        <width>200</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Candara</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btnInsertar{
+	background-color: qlineargradient(spread:pad, x1:0.015, y1:0.00568182, x2:0.626, y2:1, stop:0.144279 rgba(0, 0, 0, 176), stop:0.835821 rgba(0, 0, 0, 237));
+	
+	color: rgba(255, 255, 255, 210);
+	border-radius: 10px;
+}
+
+QPushButton#btnInsertar:hover{
+	background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(8, 220, 0, 255), stop:0.810945 rgba(136, 224, 136, 255));
+}
+
+QPushButton#btnInsertar:pressed{
+	padding-left: 5px;
+	padding-top: 5px;
+	background-color: rgba(105, 118, 132, 200);
+}</string>
+      </property>
+      <property name="text">
+       <string>Crear</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QPushButton" name="btnActualizar">
+      <property name="maximumSize">
+       <size>
+        <width>200</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Candara</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btnActualizar{
+	background-color: qlineargradient(spread:pad, x1:0.015, y1:0.00568182, x2:0.626, y2:1, stop:0.144279 rgba(0, 0, 0, 176), stop:0.835821 rgba(0, 0, 0, 237));
+	
+	color: rgba(255, 255, 255, 210);
+	border-radius: 10px;
+}
+
+QPushButton#btnActualizar:hover{
+	background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(8, 220, 0, 255), stop:0.810945 rgba(136, 224, 136, 255));
+}
+
+QPushButton#btnActualizar:pressed{
+	padding-left: 5px;
+	padding-top: 5px;
+	background-color: rgba(105, 118, 132, 200);
+}</string>
+      </property>
+      <property name="text">
+       <string>Actualizar</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QPushButton" name="btnGenerarReporte">
+      <property name="maximumSize">
+       <size>
+        <width>200</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Candara</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btnGenerarReporte{
+	background-color: qlineargradient(spread:pad, x1:0.015, y1:0.00568182, x2:0.626, y2:1, stop:0.144279 rgba(0, 0, 0, 176), stop:0.835821 rgba(0, 0, 0, 237));
+	
+	color: rgba(255, 255, 255, 210);
+	border-radius: 10px;
+}
+
+QPushButton#btnGenerarReporte:hover{
+	background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(8, 220, 0, 255), stop:0.810945 rgba(136, 224, 136, 255));
+}
+
+QPushButton#btnGenerarReporte:pressed{
+	padding-left: 5px;
+	padding-top: 5px;
+	background-color: rgba(105, 118, 132, 200);
+}</string>
+      </property>
+      <property name="text">
+       <string>Generar Reporte</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3" colspan="4">
+     <widget class="QPushButton" name="btnSalir">
+      <property name="maximumSize">
+       <size>
+        <width>200</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Candara</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btnSalir{
+	background-color: qlineargradient(spread:pad, x1:0.015, y1:0.00568182, x2:0.626, y2:1, stop:0.144279 rgba(0, 0, 0, 176), stop:0.835821 rgba(0, 0, 0, 237));
+	
+	color: rgba(255, 255, 255, 210);
+	border-radius: 10px;
+}
+
+QPushButton#btnSalir:hover{
+	background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(255, 37, 37, 255), stop:0.81592 rgba(197, 75, 75, 255));
+}
+
+QPushButton#btnSalir:pressed{
+	padding-left: 5px;
+	padding-top: 5px;
+	background-color: rgba(105, 118, 132, 200);
+}</string>
+      </property>
+      <property name="text">
+       <string>Salir</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="2">
+     <widget class="QPushButton" name="btnEliminar">
+      <property name="maximumSize">
+       <size>
+        <width>200</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Candara</family>
+        <pointsize>12</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#btnEliminar{
+	background-color: qlineargradient(spread:pad, x1:0.015, y1:0.00568182, x2:0.626, y2:1, stop:0.144279 rgba(0, 0, 0, 176), stop:0.835821 rgba(0, 0, 0, 237));	
+	color: rgba(255, 255, 255, 210);
+	border-radius: 10px;
+}
+
+QPushButton#btnEliminar:hover{
+	background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(255, 37, 37, 255), stop:0.81592 rgba(197, 75, 75, 255));
+}
+
+QPushButton#btnEliminar:pressed{
+	padding-left: 5px;
+	padding-top: 5px;
+	background-color: rgba(105, 118, 132, 200);
+}</string>
+      </property>
+      <property name="text">
+       <string>Eliminar</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="3" colspan="4">
+     <widget class="QSpinBox" name="spIdUsuario">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Candara</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(255, 255, 255, 142), stop:0.810945 rgba(255, 255, 255, 134));
+border-radius: 5px;
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QLineEdit" name="txtPassword">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Candara</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(255, 255, 255, 142), stop:0.810945 rgba(255, 255, 255, 134));
+border-radius: 5px;
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>Contraseña</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="2">
+     <widget class="QLineEdit" name="txtMail">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Candara</family>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(255, 255, 255, 142), stop:0.810945 rgba(255, 255, 255, 134));
+border-radius: 5px;
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>Correo</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" rowspan="3" colspan="7">
+     <widget class="QTableWidget" name="tblCRUD">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(255, 255, 255, 142), stop:0.810945 rgba(255, 255, 255, 134));
+border-radius: 5px;
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="selectionMode">
+       <enum>QAbstractItemView::SingleSelection</enum>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>741</width>
+     <height>521</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(6, 184, 0, 255), stop:0.810945 rgba(123, 203, 123, 255));</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>701</width>
+     <height>481</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0.363, x2:0, y2:0.528864, stop:0.0696517 rgba(238, 238, 238, 105), stop:0.81592 rgba(255, 255, 255, 94));
+border-radius: 10px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label</zorder>
+  <zorder>label_3</zorder>
+  <zorder>gridLayoutWidget</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
